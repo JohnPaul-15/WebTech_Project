@@ -2380,3 +2380,33 @@ section,
     height: 300px;
     object-fit: cover;
   }
+
+.energy {
+    position: relative;
+
+}
+
+.hover-trigger {
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.image-container {
+    position: absolute;
+    top: 50px; /* Adjust this value to position the image */
+    left: 60%; /* Center the image horizontally */
+    transform: translateX(-50%);
+    opacity: 0; /* Hide the image by default */
+    transition: opacity 0.4s ease; /* Smooth transition */
+    z-index: 999;
+  }
+
+  .energy:hover .image-container {
+    opacity: 1; /* Show the image on hover */
+}
+
+.hover-image {
+    width: 525px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
